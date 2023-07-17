@@ -39,6 +39,9 @@ public class Model {
 			graph.addEdge(this.countriesMap.get(c.getState1no()), this.countriesMap.get(c.getState2no()));
 
 		}
+		
+		System.out.println(this.graph.vertexSet().size());
+		System.out.println(this.graph.edgeSet().size());
 	}
 
 	public List<CountryAndNumber> getCountryAndNumbers() {
@@ -60,4 +63,5 @@ public class Model {
 		return null;
 
 	}
+	
 }

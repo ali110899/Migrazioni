@@ -44,7 +44,7 @@ public class FXMLController {
 			int anno = Integer.parseInt(annoS);
 
 			model.creaGrafo(anno);
-
+			
 			boxNazione.getItems().addAll(this.model.getCountries());
 
 			// calcola numero di confini
@@ -53,6 +53,7 @@ public class FXMLController {
 			for (CountryAndNumber c : result) {
 				txtResult.appendText(c.toString() + "\n");
 			}
+			
 
 		} catch (NumberFormatException e) {
 			txtResult.appendText("Errore di formattazione dell'anno\n");

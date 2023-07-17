@@ -7,7 +7,7 @@ public class TestModel {
 		
 		m.creaGrafo(1950);
 		
-
+		m.creaGrafo(1865);
 
 		
 	}
